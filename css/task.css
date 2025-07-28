@@ -1,5 +1,5 @@
 body{
-     margin: 0;
+    margin: 0;
     padding: 0;
     background-color: transparent;
     background-size: cover;
@@ -11,63 +11,62 @@ body{
 
 .taskheading{
     position: absolute;
-    top: 80px;
-    left: 1600px;
+    top: 7vh;
+    left: 50vw;
     color: rgb(255, 255, 255);
     font-family: 'abril fatface';
-    font-size: 80px;
+    font-size: 3vw;
 }
 
 .tasklibrary{
     position: absolute;
-    left: 1200px;
-    top: 300px;
-    width: 1900px;
+    left: 35vw;
+    top: 20vh;
+    width: 60vw;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    row-gap: 50px;
+    row-gap: 4.63vh;
 }
 
 #taskbook{   
-    width: 350px;
-    height: 350px;
+    width: 12vw;
+    height: 25vh;
     background: rgba(255, 255, 255, 0.1);
-    border-radius: 16px;
-    backdrop-filter: blur(12px);
-    -webkit-backdrop-filter: blur(12px);
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
-    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 0.83vw;
+    backdrop-filter: blur(1.11vh);
+    -webkit-backdrop-filter: blur(1.11vh);
+    box-shadow: 0 0.74vh 1.85vh rgba(0, 0, 0, 0.3);
+    border: 0.05vw solid rgba(255, 255, 255, 0.2);
     display: flex;
     align-items: center;
     justify-content: center;
     color: white;
-    font-size: 40px;
-    padding: 10px;
+    font-size: 1.5vw;
+    padding: 0.52vw;
 }
-    
 
 #taskbook:hover{
     transform: scale(0.99);
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+    box-shadow: 0 0.74vh 1.85vh rgba(0, 0, 0, 0.4);
     cursor: pointer;
 }
 
 .addpopup{
     position: fixed;
-    left:100px;
-    top: 500px;
-    width: 500px;
-    height: 400px;
+    left: 5.21vw;
+    top: 38vh;
+    width: 26.04vw;
+    height: 40vh;
     background:white;
-    border-radius: 10px;
+    border-radius: 0.52vw;
     z-index: 100;
-    opacity:0;
+    opacity: 0;
 }
 
 #form{
-    padding: 20px;
-    font-size: 18px;
-    line-height: 2px;
+    padding: 1.04vw;
+    font-size: 0.94vw;
+    line-height: 0.1vh;
 }
 
 .addpopup.active{
@@ -77,17 +76,17 @@ body{
 
 #closebutton{
     position: absolute;
-    right: 10px;
-    top: 10px;
-    height: 30px;
-    width: 30px;
+    right: 0.52vw;
+    top: 0.52vw;
+    height: 2.78vh;
+    width: 1.56vw;
     background-color: #4a0f004D;
     border-radius: 50%;
     color: #ffffff;
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 30px;
+    font-size: 1.56vw;
 }
 
 #closebutton:hover{
@@ -97,41 +96,41 @@ body{
 
 h2{
     position: relative;
-    left: 120px;
-    font-size: 50px;
+    left: 6.25vw;
+    font-size: 2.6vw;
 }
 
 input{
-    width: 430px;
-    height: 40px;
-    padding-left: 10px;
+    width: 22.4vw;
+    height: 3.7vh;
+    padding-left: 0.52vw;
 }
 
 p{
-    font-size: 30px;
+    font-size: 1.56vw;
 }
 
 input, textarea{
-    font-size: 25px;
+    font-size: 1.3vw;
 }
 
 input::placeholder{
     position: absolute;
-    left: 10px;
-    top: 5px;
-    font-size: 27px;
+    left: 0.52vw;
+    top: 0.46vh;
+    font-size: 1.4vw;
 }
 
 #savebutton{
     background: black;
     color: #f8eddd;
     position: relative;
-    top: 35px;
-    left: 80px;
+    top: 3.24vh;
+    left: 4.17vw;
     box-shadow: none;
-    border-radius: 15px;
-    width: 300px;
-    font-size: 30px;
+    border-radius: 0.78vw;
+    width: 15.63vw;
+    font-size: 1.56vw;
 }
 
 #savebutton:hover{
@@ -141,42 +140,41 @@ input::placeholder{
 }
 
 .book{
-    width: 350px;
-    height: 350px;
+    width: 10vw;
+    height: 23vh;
     background: rgba(255, 255, 255, 0.1);
-    border-radius: 16px;
-    backdrop-filter: blur(12px);
-    -webkit-backdrop-filter: blur(12px);
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
-    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 0.83vw;
+    backdrop-filter: blur(1.11vh);
+    -webkit-backdrop-filter: blur(1.11vh);
+    box-shadow: 0 0.74vh 1.85vh rgba(0, 0, 0, 0.3);
+    border: 0.05vw solid rgba(255, 255, 255, 0.2);
     display: flex;
     align-items: center;
     justify-content: center;
     color: white;
-    font-size: 40px;
-    padding: 10px;
-    inline-size: 350px;
+    font-size: 1.5vw;
+    padding: 0.52vw;
     word-break: break-all;
-
 }
 
 .book:hover{
     transform: scale(0.99);
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+    box-shadow: 0 0.74vh 1.85vh rgba(0, 0, 0, 0.4);
     cursor: pointer;
 }
 
 .delete-btn {
-    background-image: url('dustbin.png');
+    background-image: url('../images/dustbin.png');
     background-repeat: no-repeat;
     background-size: cover;
-    height: 50px;
-    width: 50px;
+    height: 3.5vh;
+    width: 1.5vw;
     position: absolute;
-    top: 5px;
-    right: 5px;
+    top: 0.46vh;
+    right: 0.26vw;
     border: none;
-    border-radius: 3px;
+    border-radius: 0.16vw;
     cursor: pointer;
     background-color: transparent;
 }
+

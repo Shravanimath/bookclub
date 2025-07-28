@@ -12,22 +12,23 @@ body {
 }
 
 .flipbook {
-    height: 1200px!important;
-    width: 1900px!important;
-    border-radius: 50px;
+    height: 83vh !important; 
+    width: 65vw !important;   
+    border-radius: 2vw;
     overflow: hidden;
-    margin-bottom: 20px;
+    margin-bottom: 1.85vh;
 }
 
 .hard {
-    background-image: url('bookcover.jpg');
     background-size: cover;
     background-position: center;
+    box-shadow: 0 1.85vh 3.7vh rgba(0, 0, 0, 0.4),    
+                inset -0.26vw 0 0.52vw rgba(0, 0, 0, 0.3);
     display: flex;
     align-items: center;
     justify-content: center;
     color: white;
-    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+    text-shadow: 0.1vw 0.1vw 0.2vw rgba(0,0,0,0.5);
 }
 
 .page {
@@ -37,25 +38,29 @@ body {
     justify-content: center;
 }
 
-
 .page-controls {
     display: flex;
-    gap: 10px;
-    margin-top: 20px;
+    gap: 0.52vw;
+    margin-top: 1.85vh;
+    position: fixed;
+    bottom: 1.85vh;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1000;
 }
 
 .page-controls button {
-    padding: 10px 20px;
+    padding: 0.93vh 1.85vw;
     border: none;
-    border-radius: 5px;
-    background: #8a6dae;
+    border-radius: 0.26vw;
+    background: #6d2aa8;
     color: white;
     cursor: pointer;
-    font-size: 30px;
+    font-size: 2.78vh;
 }
 
 .page-controls button:hover {
-    background: #7b5b9e;
+    background: #af5ef6;
 }
 
 .page, .hard {
@@ -65,34 +70,26 @@ body {
 }
 
 .page-content textarea {
-    height: 1200px;
-    width:950px;
-    padding: 30px;
+    height: 83.5vh;
+    width: 32.5vw;
+    padding: 2.78vh;
     box-sizing: border-box; 
-    font-size: 30px;
+    font-size: 2.78vh;
     resize: none;
-  
-}
-
-.page-controls {
-    position: fixed;
-    bottom: 20px;
-    left: 50%;
-    transform: translateX(-50%);
-    z-index: 1000;
 }
 
 h1{
-    font-size: 80px;
-    word-break: break-all;
-    padding: 30px;
+    font-size: 7vh;
+    word-break: break-word;
+    padding: 2.78vh;
     position: absolute;
-    top: 200px;
+    top: 1vh;
 }
+
 p{
     position: absolute;
-    bottom: 100px;
-    font-size: 40px;
-    word-break: break-all;
-    padding: 30px;
+    bottom: 3vh;
+    font-size: 3.7vh;
+    word-break: break-word;
+    padding: 2.78vh;
 }

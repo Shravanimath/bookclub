@@ -15,7 +15,6 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
-
 }
 
 .upperdiv{
@@ -26,8 +25,6 @@ body{
     align-items: center;
     justify-content: space-evenly;
     z-index: 2;
-    
-
 }
 
 .lowerdiv{
@@ -41,25 +38,23 @@ body{
 }
 
 .cards{
-    height: 925px;
-    width: 475px;
-    border-radius: 51px;
+    height: 70vh; 
+    width: 15vw;   
+    border-radius: 3vw;
     backdrop-filter: blur(10px);
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
-    
+    box-shadow: 0 0.74vh 1.85vh rgba(0, 0, 0, 0.2);
 }
 
 .innercards{
-    height: 850px;
-    width: 425px;
-    border-radius: 51px;
+    height: 65vh;   
+    width: 13vw;   
+    border-radius: 3vw;
     backdrop-filter: blur(10px);
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 0.74vh 1.85vh rgba(0, 0, 0, 0.2);
     display: flex;
     align-items: center;
     justify-content: center;
 }
-
 
 #story{
     background: linear-gradient(to bottom ,#bba1d1,#efdef6);
@@ -79,76 +74,76 @@ body{
 
 .heading{
     text-align: center;
-    font-size: 85px;
-    height: 100px;
+    font-size: 2.5vw;  
+    height: 9.26vh;     
     position: absolute;
-    top: 51px;
+    top: 4.72vh;        
     font-family: 'abril fatface';
     line-height: 1.1;
 }
 
 .subheading{
     text-align: center;
-    font-size: 42px;
-    height: 100px;
+    font-size: 1.3vw; 
+    height: 9.26vh;
     position: absolute;
-    top: 265px;
+    top: 19vh;       
     font-family: 'raleway';
-    left: 30px;
-    right: 30px;
-    letter-spacing: 5px;
+    left: 1.56vw;       
+    right: 1.56vw;
+    letter-spacing: 0.26vw;  
 }
 
 .cardinfo{
     text-align: center;
-    font-size: 34px;
-    height: 100px;
+    font-size: 1.3vw;  
+    height: 9.26vh;
     position: absolute;
-    bottom: 51px;
+    bottom: 4.72vh;
     font-family: 'lato';
-    right: 30px;
-    left: 30px;
+    right: 1.56vw;
+    left: 1.56vw;
 }
 
 .cards:hover {
-  opacity: 0;
-  transform: scale(0.99);
-  transition: 0.1s ease;
-  cursor: pointer;
+    opacity: 0;
+    transform: scale(0.99);
+    transition: 0.1s ease;
+    cursor: pointer;
 }
 
 #innerstory{
-    border: 5px dashed #bba1d1;
+    border: 0.26vw dashed #bba1d1;
     color: #bba1d1;
-    font-size: 50px;
+    font-size: 4.63vw;  /* 50px */
 }
 
 #innerdiary{
-    border: 5px dashed #a8c3a8;
+    border: 0.26vw dashed #a8c3a8;
     color: #a8c3a8;
-    font-size: 50px;
+    font-size: 4.63vw;
 }
 
 #innerwork{
-    border: 5px dashed #c7b199;
+    border: 0.26vw dashed #c7b199;
     color: #c7b199;
-    font-size: 50px;
+    font-size: 4.63vw;
 }
 
 #innertask{
-    border: 5px dashed #f4b183;
+    border: 0.26vw dashed #f4b183;
     color: #f4b183;
-    font-size: 50px;
+    font-size: 4.63vw;
 }
 
 .headline{
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 100px;
+    font-size: 3vw;  
     font-style: bolder;
     color: #8e572a;
     position: absolute;
-    top: 50px;
-    left: 600px;
+    top: 4.63vh;        
+    left: 25vw;      
 }
