@@ -1,0 +1,100 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to bottom ,#c7b199,#f6e9d7);
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Arial', sans-serif;
+}
+
+.flipbook {
+    height: 1200px!important;
+    width: 1900px!important;
+    border-radius: 50px;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+.hard {
+    background-image: url('bookcover.jpg');
+    background-size: cover;
+    background-position: center;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4),    
+                inset -5px 0 10px rgba(0, 0, 0, 0.3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+}
+
+.page {
+    background-color: #f9f5ff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.page-controls {
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.page-controls button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background: #7a4d1d;
+    color: white;
+    cursor: pointer;
+    font-size: 30px;
+}
+
+.page-controls button:hover {
+    background: #a1886e;
+}
+
+.page, .hard {
+    width: 50%;
+    height: 100%;
+    float: left;
+}
+
+.page-content textarea {
+    height: 1200px;
+    width:950px;
+    padding: 30px;
+    box-sizing: border-box; 
+    font-size: 30px;
+    resize: none;
+  
+}
+
+.page-controls {
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1000;
+}
+
+h1{
+    font-size: 80px;
+    word-break: break-all;
+    padding: 30px;
+    position: absolute;
+    top: 200px;
+}
+p{
+    position: absolute;
+    bottom: 100px;
+    font-size: 40px;
+    word-break: break-all;
+    padding: 30px;
+}

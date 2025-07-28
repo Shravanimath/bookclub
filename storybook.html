@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Viewer</title>
+    <link rel="stylesheet" href="./css/storybook.css">
+</head>
+<body>
+    <div class="flipbook">
+        <div class="hard">
+            <h1 id="book-title">Book Title</h1>
+        </div>
+        <div class="hard"></div>
+        <div></div>
+        <div class="hard"></div>
+        <div class="hard">The End</div>
+    </div>
+
+    <div class="page-controls">
+        <button id="add-page">+ Add Page</button>
+        <button id="delete-page">- Delete Page</button>
+        <button id="back-button">← Back to Library</button>
+    </div>
+
+    <script src="./javascript/jquery.js"></script>
+    <script src="./javascript/turn.js"></script>
+    <script src="./javascript/storybook.js"></script>
+    <style>
+        .hard{
+            background-image: url('./images/bookcover.jpg');
+        }
+    </style>
+</body>
+</html>

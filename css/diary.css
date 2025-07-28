@@ -1,0 +1,182 @@
+body{
+     margin: 0;
+    padding: 0;
+    background-color: transparent;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100vh;
+    background-attachment: fixed;
+}
+
+.diaryheading{
+    position: absolute;
+    top: 80px;
+    left: 1600px;
+    color: rgb(255, 255, 255);
+    font-family: 'abril fatface';
+    font-size: 80px;
+}
+
+.diarylibrary{
+    position: absolute;
+    left: 1200px;
+    top: 300px;
+    width: 1900px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    row-gap: 50px;
+}
+
+#diarybook{   
+    width: 350px;
+    height: 350px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 16px;
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 40px;
+    padding: 10px;
+}
+    
+
+#diarybook:hover{
+    transform: scale(0.99);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+    cursor: pointer;
+}
+
+.addpopup{
+    position: fixed;
+    left:100px;
+    top: 500px;
+    width: 500px;
+    height: 400px;
+    background:white;
+    border-radius: 10px;
+    z-index: 100;
+    opacity:0;
+}
+
+#form{
+    padding: 20px;
+    font-size: 18px;
+    line-height: 2px;
+}
+
+.addpopup.active{
+    opacity: 1;
+    z-index: 100;
+}
+
+#closebutton{
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    height: 30px;
+    width: 30px;
+    background-color: #4a0f004D;
+    border-radius: 50%;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+}
+
+#closebutton:hover{
+    color: black;
+    cursor: pointer;
+}
+
+h2{
+    position: relative;
+    left: 120px;
+    font-size: 50px;
+}
+
+input{
+    width: 430px;
+    height: 40px;
+    padding-left: 10px;
+}
+
+p{
+    font-size: 30px;
+}
+
+input, textarea{
+    font-size: 25px;
+}
+
+input::placeholder{
+    position: absolute;
+    left: 10px;
+    top: 5px;
+    font-size: 27px;
+}
+
+#savebutton{
+    background: black;
+    color: #f8eddd;
+    position: relative;
+    top: 35px;
+    left: 80px;
+    box-shadow: none;
+    border-radius: 15px;
+    width: 300px;
+    font-size: 30px;
+}
+
+#savebutton:hover{
+    background-color: #413b3980;
+    color: black;
+    cursor: pointer;
+}
+
+.book{
+    width: 350px;
+    height: 350px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 16px;
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 40px;
+    padding: 10px;
+    inline-size: 350px;
+    word-break: break-all;
+
+}
+
+.book:hover{
+    transform: scale(0.99);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+    cursor: pointer;
+}
+
+.delete-btn {
+    background-image: url('dustbin.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 50px;
+    width: 50px;
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    background-color: transparent;
+}
