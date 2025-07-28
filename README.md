@@ -42,6 +42,11 @@ Each entry is saved locally in the browser and can be viewed in a realistic **fl
 
 ## 🚀 How to Use
 
-1. Clone the repository:
+1. Download or clone the repository:
    ```bash
    git clone https://github.com/Shravanimath/bookclub.git
+3. Open the project folder.
+4. Double-click the `index.html` file to open it in your browser.
+
+No server or installation needed.
+
